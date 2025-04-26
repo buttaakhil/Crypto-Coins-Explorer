@@ -1,0 +1,94 @@
+*{
+  font-family: "Quicksand", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding:48px;
+}
+h1{
+  font-family: "Orbitron", sans-serif;
+  font-size: 56px;
+  font-weight:bold;
+  text-align: center;
+  color: white;
+}
+
+body{
+  background-color: black;
+}
+.card-image{
+  width: 160px;
+}
+
+.each-card{
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all ease-in 0.5s;
+}
+
+.each-card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0px 0px 32px white;
+}
+.all-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.coin-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.coin-price{
+  font-size: 16px;
+}
+
+.coin-title-price{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.all-buttons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  
+}
+
+.each-button{
+  padding: 4px;
+  width: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  transition:all 0.5s ease-in-out;
+}
+
+.each-button:hover{
+  background-color:black;
+  color: white;
+}
+@media(max-width:440px){
+  .App{
+    padding: 24px;
+  }
+}
+
+@media(max-width:560px){
+  h1{
+    font-size: 40px;
+  }
+}
